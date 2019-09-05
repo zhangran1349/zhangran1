@@ -26,7 +26,7 @@ public class UserController {
 	@RequestMapping("list.do")
 	public String list(Model model,String sname){
 		Map map = new HashMap();//测试
-		map.put("sname", sname);
+		map.put("sname", sname);//测试
 		List list = us.list(map);
 		model.addAttribute("list", list);
 		model.addAttribute("map", map);
